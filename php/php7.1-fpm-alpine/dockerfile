@@ -1,0 +1,21 @@
+FROM registry.cn-hangzhou.aliyuncs.com/cochan/php:7.1-fpm-alpine
+LABEL author="COCHAN <cochan717@foxmail.com>"
+
+# 安装基础包
+RUN set -x \
+    && sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+    && apk update && apk add composer \
+    && composer self-update \
+    && apk add tzdata \
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
+    && echo "Asia/Shanghai" > /etc/timezone \
+    && apk del tzdata 
+
+# 安装相关扩展
+RUN set -x \
+    # && docker-php-ext-configure gd --with-webp=/usr/include/webp --with-jpeg=/usr/include --with-freetype=/usr/include/freetype2/ \
+    # && docker-php-ext-install -j$(nproc) gd \
+    # && docker-php-ext-install pdo \
+    # && docker-php-ext-install pdo_mysql \
+    # && docker-php-ext-install mysqli \
+    && docker-php-ext-install bcmath
