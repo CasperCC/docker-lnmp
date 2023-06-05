@@ -4,4 +4,5 @@ LABEL author="COCHAN <cochan717@foxmail.com>"
 # 安装基础包
 RUN set -x \
     && apt-get update \
-    && composer self-update
+    && composer self-update \
+    && apt-get install -y cron
