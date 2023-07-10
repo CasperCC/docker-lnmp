@@ -1,0 +1,6 @@
+FROM registry.cn-hangzhou.aliyuncs.com/cochan/php:8.0-fpm
+LABEL author="COCHAN <cochan717@foxmail.com>"
+
+# 安装基础包
+RUN #apt update \
+#    && composer self-update
