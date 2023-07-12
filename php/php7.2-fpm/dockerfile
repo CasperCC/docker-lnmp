@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/cochan/php:7.2-fpm
+FROM registry.cn-guangzhou.aliyuncs.com/softstao/php:7.2-fpm
 LABEL author="COCHAN <cochan717@foxmail.com>"
 
 # 安装基础包

@@ -32,13 +32,13 @@ docker-compose一键部署lnmp+redis环境，集成php7.1+php7.3+php7.4+php8.1
 │  └─nginx
 │          
 ├─php		//多版本php
-│  ├─php7.1-fpm-alpine
+│  ├─php7.1-fpm
 │  │      dockerfile
 │  │      
-│  ├─php7.3-fpm-alpine
+│  ├─php7.3-fpm
 │  │      dockerfile
 │  │      
-│  ├─php7.4-fpm-alpine
+│  ├─php7.4-fpm
 │  │      dockerfile
 │  │      
 │  └─php8.1-fpm
