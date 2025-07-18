@@ -1,6 +1,6 @@
 # docker-lnmp
 
-docker-compose一键部署lnmp+redis环境，集成php7.1+php7.3+php7.4+php8.1
+docker-compose一键部署lnmp+redis环境，集成php7.1+php7.3+php7.4+php8.1+php8.2+php8.3
 
 ##  文件结构
 
@@ -41,7 +41,13 @@ docker-compose一键部署lnmp+redis环境，集成php7.1+php7.3+php7.4+php8.1
 │  ├─php7.4-fpm
 │  │      dockerfile
 │  │      
-│  └─php8.1-fpm
+│  ├─php8.1-fpm
+│  │      dockerfile
+│  │      
+│  ├─php8.2-fpm
+│  │      dockerfile
+│  │      
+│  └─php8.3-fpm
 │         dockerfile
 │          
 └─workspace	//项目根目录
